@@ -25,6 +25,7 @@ body {
 
 .architect--header-main-menu {
     list-style-type: none;
+    margin:0;
 }
 
 .fa-bars, .fa-xmark {
@@ -51,6 +52,27 @@ body {
 .btn-explore {
     border-radius: 1rem;
 }
+
+.architect--main-features {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem 5rem;
+}
+
+
+.architect--main-features-card-container {
+    grid-template-columns: 1fr 1fr;
+    gap:2rem 2rem;
+}
+
+#feature-header {
+    border-left:0.4rem solid var(--primary-color);
+}
+
+#architect-footer {
+    padding:2.5rem;
+    color:var(--color-light);
+}
+
 @media only screen and (max-width:800px) {
     .architect--header-open-menu {
         position:absolute;
@@ -68,7 +90,7 @@ body {
     }
     .architect--header-main-menu {
         position:fixed;
-        top:-100%;
+        top:-120%;
         right:0;
         left:0;
         height:100vh;
@@ -88,5 +110,16 @@ body {
     .architect--header-main-menu a:hover {
         font-size: 3rem;
         color:var(--color-info);
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .architect--main-features {
+        grid-template-columns: 1fr;
+    }
+    
+    
+    .architect--main-features-card-container {
+        grid-template-columns: 1fr;
     }
 }

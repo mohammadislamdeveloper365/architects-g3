@@ -9,7 +9,7 @@ CSS Framework/Library
     --color-danger:#E21717;
     --color-dark: #242B2E;
     --color-light:rgb(255, 255, 255);
-    --color-info:#320844;
+    --color-info:#6c0e95;
     --color-light-dark:rgb(117, 130, 131,0.1);
     font-size: 100%;
 }
@@ -312,6 +312,9 @@ Display Value
     display:inline;
 }
 
+.d-grid {
+    display:grid;
+}
 
 .flex-column {
     flex-direction: column;

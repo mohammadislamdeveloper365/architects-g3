@@ -15,7 +15,7 @@ addListener(closeMenu, 'click', function() {
     console.log("clicke")
     openMenu.style.display = 'block';
     closeMenu.style.display = 'none';
-    mainMenu.style.top = '-100%';
+    mainMenu.style.top = '-120%';
 });
 
 function getElement(id) {
