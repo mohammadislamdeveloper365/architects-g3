@@ -18,22 +18,39 @@
     <script defer src="./js/index.js"></script>
 </head>
 <body>
-    <header class="architect--header container-xs d-flex justify-content-between align-items-center">
-        <div class="p-3 architect--header-logo cursor-grab">
-            Mohammad Islam
-        </div>
-        <div class="p-3 architect--header-open-menu cursor-grab">
-            <i class="fa-solid fa-bars"></i>
-        </div>
-        <div class="p-3 architect--header-close-menu cursor-grab">
-            <i class="fa-solid fa-xmark"></i>
-        </div>
-        <ul class="architect--header-main-menu d-flex">
-            <li><a class="d-inline-block p-2 cursor-grab " href="#">Home</a></li>
-            <li><a class="d-inline-block p-2 cursor-grab " href="#">About Me</a></li>
-            <li><a class="d-inline-block p-2 cursor-grab " href="#">Connect</a></li>
-            <li><a class="d-inline-block p-2 cursor-grab " href="#">Login</a></li>
-        </ul>
+    <header class="architect--header mb-4 bg-secondary">
+        <nav class="p-4 container-xs d-flex justify-content-between align-items-center mb-4">
+            <div class="p-3 architect--header-logo cursor-grab">
+                Mohammad Islam
+            </div>
+            <div class="p-3 architect--header-open-menu cursor-grab">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="p-3 architect--header-close-menu cursor-grab">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="architect--header-main-menu d-flex">
+                <li><a class="d-inline-block p-2 cursor-grab " href="#">Home</a></li>
+                <li><a class="d-inline-block p-2 cursor-grab " href="#">About Me</a></li>
+                <li><a class="d-inline-block p-2 cursor-grab " href="#">Connect</a></li>
+                <li><a class="d-inline-block p-2 cursor-grab " href="#">Login</a></li>
+            </ul>
+        </nav>
+        <section id="architect--header-intro" class="container-xs text-center">
+            <h1 class="mb-2">
+                Brand New <br/> Group of Architects
+            </h1>
+            <p class="mb-2">
+                Starting a new business or introducing a new product? We are launch specialists.
+                We define your audience, craft your message, design your identity and bring it to life.
+            </p>
+            <button class="btn btn-primary btn-explore">
+                Explore More
+            </button>
+        </section>
+        <section class="p-4 container-xs architect--header-banner mb-4">
+            <img src="./images/banner.png" class="img-fluid pb-4" alt="banner image">
+        </section>
     </header>
 </body>
 </html>

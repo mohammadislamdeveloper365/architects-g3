@@ -43,13 +43,21 @@ body {
     display:none;
 }
 
+#architect--header-intro {
+    max-width: 800px;
+    margin:0 auto 2rem;
+}
+
+.btn-explore {
+    border-radius: 1rem;
+}
 @media only screen and (max-width:800px) {
     .architect--header-open-menu {
         position:absolute;
         right:0;
         top:0;
         display:block;
-        transition:top 0.3s ease;
+        
     }
 
     .architect--header-close-menu {
@@ -64,14 +72,16 @@ body {
         right:0;
         left:0;
         height:100vh;
-        background-color: rgba(16, 15, 15, 0.5);
+        background-color: rgba(16, 15, 15, 0.8);
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        transition:top 0.5s ease;
     }
 
     .architect--header-main-menu a {
         font-size: 2rem;
+        color:white;
         transition: font-size 0.3s ease, color 0.3s ease;
     }
 
