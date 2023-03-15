@@ -1,0 +1,82 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.cursor-grab {
+    cursor:grab;
+}
+.architect--header-logo {
+    font-family: 'Tilt Warp', cursive;
+    font-weight: 900;
+    font-style: oblique;
+    text-shadow: 1rem 0.2rem 0.7rem rgb(205, 49, 49);
+    font-size: 3.5rem;
+}
+
+.architect--header-main-menu a {
+    text-decoration: none;
+}
+
+.architect--header-main-menu {
+    list-style-type: none;
+}
+
+.fa-bars, .fa-xmark {
+    font-size: 3rem;
+}
+
+.fa-xmark {
+    color:red;
+}
+
+.architect--header-open-menu {
+    display:none;
+}
+
+.architect--header-close-menu {
+    display:none;
+}
+
+@media only screen and (max-width:800px) {
+    .architect--header-open-menu {
+        position:absolute;
+        right:0;
+        top:0;
+        display:block;
+        transition:top 0.3s ease;
+    }
+
+    .architect--header-close-menu {
+        position:absolute;
+        right:0;
+        top:0;
+        z-index:2;
+    }
+    .architect--header-main-menu {
+        position:fixed;
+        top:-100%;
+        right:0;
+        left:0;
+        height:100vh;
+        background-color: rgba(16, 15, 15, 0.5);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .architect--header-main-menu a {
+        font-size: 2rem;
+        transition: font-size 0.3s ease, color 0.3s ease;
+    }
+
+    .architect--header-main-menu a:hover {
+        font-size: 3rem;
+        color:var(--color-info);
+    }
+}
